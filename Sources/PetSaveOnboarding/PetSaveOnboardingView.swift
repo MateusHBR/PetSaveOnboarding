@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct PetSaveOnboardingView: View {
+public struct PetSaveOnboardingView: View {
   @State var currentPageIndex = 0
   
   public init(items: [OnboardingModel]) {
@@ -19,7 +19,7 @@ struct PetSaveOnboardingView: View {
     items[currentPageIndex].skipButtonTitle
   }
   
-  var body: some View {
+  public var body: some View {
     if items.isEmpty {
       Text("No items to show.")
     } else {
